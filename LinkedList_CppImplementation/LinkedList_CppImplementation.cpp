@@ -43,7 +43,7 @@ void insertAtTheEnd(Node** head, int newValue) {
 	last->Next = newNode;
 }
 
-void insertAtTheEnd(Node* previous, int newValue) {
+void insertAfter(Node* previous, int newValue) {
 	//1. Check if previous node is NULL
 	if (previous == NULL) {
 		cout << "Previous can not be NULL";
@@ -76,6 +76,7 @@ int main() {
 
 	insertAfter(head, -1);
 	insertAfter(second, -2);
+
 	printList(head);
 
 	system("pause>0"); // ?
