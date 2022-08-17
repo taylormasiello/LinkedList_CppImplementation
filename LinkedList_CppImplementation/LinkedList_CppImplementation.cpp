@@ -71,8 +71,11 @@ int main() {
 	third->Value = 3;
 	third->Next = NULL;
 
-	insertAtTheFront(&head, -1);
+	//insertAtTheFront(&head, -1);
+	//insertAtTheFront(&head, -2);
+
 	insertAtTheEnd(&head, 4);
+	insertAtTheEnd(&head, 5);
 
 	insertAfter(head, -1);
 	insertAfter(second, -2);
